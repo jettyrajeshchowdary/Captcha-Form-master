@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign up for our service" />
+    <meta property="og:title" content="Sign Up" />
+    <meta property="og:description" content="Sign up for our service" />
+    <meta property="og:url" content="https://www.example.com/signup" />
+    <meta
+      property="og:image"
+      content="https://www.example.com/images/signup.png"
+    />
+    <title>Sign Up  CAPTCHA ENTER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-container">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <div id="cap-box">
+          <div id="captcha"></div>
+
+          <button id="captcha-button">Captcha</button>
+        </div>
+        <br />
+        <br />
+        <div id="sign-box">
+          <input
+            type="text"
+            id="captcha-input"
+            name="captcha"
+            placeholder="Enter Captcha"
+            required
+          />
+
+          <button type="submit">Sign up</button>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
